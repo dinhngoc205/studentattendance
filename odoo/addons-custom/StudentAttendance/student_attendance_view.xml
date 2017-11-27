@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	
+    	<record id="view_student_attendance_filter" model="ir.ui.view">
+            <field name="name">student.attendance.filter</field>
+            <field name="model">student.attendance</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Student Attendance">
+                    <field name="name" />
+                </search>
+            </field>
+        </record>
+        
+        <record id="view_student_attendance_form" model="ir.ui.view">
+            <field name="name">student.attendance.form</field>
+            <field name="model">student.attendance</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Student Attendance">
+                	<header>
+                	</header>
+                	<sheet>
+	                	<group>
+		                    <field name="name" required="1"/>
+	                    </group>
+                    </sheet>       
+                </form>
+            </field>
+         </record>
+
+         <record id="view_student_attendance_tree" model="ir.ui.view">
+            <field name="name">student.attendance.tree</field>
+            <field name="model">student.attendance</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Student Attendance">
+                    <field name="name"/>
+                </tree>
+            </field>
+         </record>
+       
+         <record id="action_view_student_attendance" model="ir.actions.act_window">
+            <field name="name">Ten Object</field>
+            <field name="res_model">student.attendance</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+         </record>
+        
+    </data>
+</odoo>

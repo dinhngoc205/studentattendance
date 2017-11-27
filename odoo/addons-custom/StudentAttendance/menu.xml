@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+    	<menuitem id="menu_action_student_attendance" 
+			name="Student Attendance" 
+			action="action_view_student_attendance"
+			sequence="100"/>
+    	
+    </data>
+</openerp>
